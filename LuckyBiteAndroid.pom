@@ -5,6 +5,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.techlabs.luckybite</groupId>
     <artifactId>luckybite-android</artifactId>
-    <version>0.0.61</version>
+    <version>0.0.62</version>
     <packaging>aar</packaging>
 </project>
