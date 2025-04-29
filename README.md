@@ -2,28 +2,24 @@
 
 ## 설치
 
-1. 테크랩스로부터 “**LUCKY_VERSE_GCP_KEY.text**”파일을 전달 받고, 해당 파일을 프로젝트 루트 디렉토리에 두세요.
-2. settings.gradle 파일에 아래 코드를 추가하세요.
+1. settings.gradle 파일에 아래 코드를 추가하세요.
 
 ```groovy
-dependencyResolutionManagement {    
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)    
-    repositories {        
-        google()        
-        mavenCentral()        
-        maven ("https://bidmad-sdk.s3.amazonaws.com/") //Bidmad        
-        maven {            
-            url = uri("https://northamerica-northeast1-maven.pkg.dev/luckybite/luckybite-android")            
-            credentials {                
-                username = "_json_key_base64"                
-                password = file("LUCKY_VERSE_GCP_KEY.text").readText().trim()            
-            }        
-        }    
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://bidmad-sdk.s3.amazonaws.com/") } //Bidmad
+        flatDir {
+            dirs 'app/libs'
+        }
+
     }
 }
 ```
 
-1. 앱 레벨 build.gradle에 아래와 같은 코드를 추가하세요.
+2. 앱 레벨 build.gradle에 아래와 같은 코드를 추가하세요.
 
 ```groovy
 dependencies {
@@ -37,7 +33,7 @@ dependencies {
 }
 ```
 
-1. AndroidManifest.xml 파일에 아래 코드들을 추가하세요.
+3. AndroidManifest.xml 파일에 아래 코드들을 추가하세요.
 
 ```xml
 ...
