@@ -25,7 +25,7 @@ dependencyResolutionManagement {
 ```groovy
 dependencies {
 	...
-	implementation("com.techlabs.luckybite:luckybite-android:0.0.174")
+    	implementation(name: 'LuckyVerse', ext: 'aar')
 	implementation("ad.helper.openbidding:admob-obh:3.20.0")
 	implementation("com.adop.sdk:bidmad-androidx:3.20.0")
 	implementation("com.adop.sdk.adapter:admob:22.0.0.6")
