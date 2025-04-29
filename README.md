@@ -2,7 +2,8 @@
 
 ## 설치
 
-1. settings.gradle 파일에 아래 코드를 추가하세요.
+1. 프로젝트의 app 디렉토리 안에 libs 디렉토리를 만들고, 릴리즈 페이지에서 다운 받은 .aar 파일을 옮기세요.
+2. settings.gradle 파일에 아래 코드를 추가하세요.
 
 ```groovy
 dependencyResolutionManagement {
@@ -19,7 +20,7 @@ dependencyResolutionManagement {
 }
 ```
 
-2. 앱 레벨 build.gradle에 아래와 같은 코드를 추가하세요.
+3. 앱 레벨 build.gradle에 아래와 같은 코드를 추가하세요.
 
 ```groovy
 dependencies {
@@ -33,7 +34,7 @@ dependencies {
 }
 ```
 
-3. AndroidManifest.xml 파일에 아래 코드들을 추가하세요.
+4. AndroidManifest.xml 파일에 아래 코드들을 추가하세요.
 
 ```xml
 ...
