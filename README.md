@@ -86,8 +86,8 @@ LuckyVerse 싱글톤 클래스의 `updateADID`  함수를 이용해, 사용자 �
 ```kotlin
 import com.techlabs.luckyverse.core.LuckyVerse
 ...
-LuckyVerse.instance().setInterstitialAdZoneId("전면_광고_존_아이디")
-LuckyVerse.instance().setRewardAdZoneId("보상형_광고_존_아이디")
+LuckyVerse.instance().setInterstitialAdZoneId(activity, "전면_광고_존_아이디")
+LuckyVerse.instance().setRewardAdZoneId(activity, "보상형_광고_존_아이디")
 ...
 
 ```
