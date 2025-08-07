@@ -5,6 +5,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.techlabs.luckieverse</groupId>
     <artifactId>luckieverse-android</artifactId>
-    <version>1.0.119</version>
+    <version>1.0.120</version>
     <packaging>aar</packaging>
 </project>
